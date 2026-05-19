@@ -1,106 +1,82 @@
 ---
-name: "elementor-product-copy-writer"
+name: "Elementor UX Writer"
 version: "1.0.0"
 description: >
-  Generates on-brand product copy for Elementor using official brand glossary and voice & tone guidelines.
-  Use this skill whenever someone asks to write, draft, generate, or create copy for any Elementor UI surface —
-  including microcopy (buttons, labels, tooltips), onboarding and empty states, error and success messages,
-  marketing and feature descriptions. Also use when someone provides a brief, a UI surface description, an
-  existing draft to rewrite, or a screenshot/mockup and wants copy produced from it. The skill generates
-  multiple options with a recommended pick, rationale, and a built-in reviewer pass to ensure all output is
-  glossary-compliant and voice-aligned before delivery.
+  Writes on-brand product copy from scratch for Elementor UI surfaces. Use this skill whenever
+  someone needs to generate, create, or draft UX copy, microcopy, button labels, error messages,
+  empty states, tooltips, onboarding flows, CTAs, or any user-facing text for Elementor products.
+  Triggers on phrases like: "write copy for", "draft this screen", "help me write", "create copy for",
+  "what should this say", "suggest copy", "give me options for". Also triggers when a PRD, screenshot,
+  wireframe, or feature description is shared and copy is the expected output. Always use this skill
+  over generic writing when Elementor product context is present.
 author: "Elementor Content Design"
 license: "CC-BY-NC-4.0"
 entry_point: "prompts/write.txt"
 ---
 
-# Elementor Product Copy Writer
+# Elementor UX Writer
 
-This skill generates product copy grounded in Elementor's brand glossary and voice & tone guidelines.
-It produces multiple copy options per request, recommends the best one with rationale, then automatically
-runs the reviewer pass on the recommended pick before returning the final output.
+A skill for generating on-brand, human-centered product copy for Elementor from scratch.
+Takes any combination of context — text description, screenshot, PRD, wireframe — and produces
+multiple copy options per surface, grounded in Elementor's actual brand guidelines and UX writing principles.
+Supports feedback and iteration without losing context.
 
-## Input types supported
+## What it does
 
-- **Brief or feature description** — plain text explaining what the copy needs to do
-- **UI surface or screen** — e.g. "onboarding modal for first-time users"
-- **Existing draft to rewrite** — paste the current copy, ask to improve it
-- **Screenshot or mockup** — extract the context and generate aligned copy
+| Capability | Description |
+|---|---|
+| **Context audit** | Identifies missing information and asks for it before writing |
+| **Copy generation** | Produces 3 options per surface: Safe, Brand-Forward, and Concise |
+| **Brand alignment** | Applies the real Elementor glossary, voice, tone, and surface-area rules |
+| **Image/screenshot input** | Extracts UI context from uploaded designs or wireframes |
+| **PRD input** | Reads feature specs and maps them to copy needs |
+| **Iteration** | Accepts structured or casual feedback and refines without starting over |
 
-## Copy types covered
+## Surface areas
 
-- UI microcopy: buttons, labels, tooltips
-- Onboarding flows and empty states
-- Error and success messages
-- Marketing and feature descriptions
-- Tooltips and help text
+Applies correct tone standards per context type — identical surface coverage to the Copy Reviewer:
+- Error messages, empty states, onboarding, success states
+- CTAs, tooltips, destructive actions, navigation labels
+- Angie (AI) responses, upgrade/pricing copy, settings
 
-## Output structure
+## Input types
 
-Every response returns:
+- Text description of a screen, component, or flow
+- Screenshot or wireframe (uploaded image)
+- PRD or feature spec (pasted text or document)
+- A mix of any of the above
 
-```json
-{
-  "copy_type": "<identified type>",
-  "surface": "<identified UI surface or context>",
-  "options": [
-    {
-      "id": "A",
-      "copy": "<copy option>",
-      "notes": "<brief notes on approach>"
-    },
-    {
-      "id": "B",
-      "copy": "<copy option>",
-      "notes": "<brief notes on approach>"
-    },
-    {
-      "id": "C",
-      "copy": "<copy option>",
-      "notes": "<brief notes on approach>"
-    }
-  ],
-  "recommended": "A",
-  "rationale": "<why this option best fits Elementor's voice, tone, and glossary for this context>",
-  "review": {
-    "issues": [],
-    "improved_text": "<the recommended copy, confirmed clean or lightly corrected>"
-  }
-}
-```
+## Output format
 
-If the reviewer finds issues with the recommended pick, it corrects them inline and updates `review.improved_text`.
-If no issues are found, `review.issues` is empty and `review.improved_text` mirrors the recommended copy.
+For each surface or element:
+
+1. **Safe** — Clear, functional, directly on-brand
+2. **Brand-Forward** — Leans into Elementor's voice and personality
+3. **Concise** — Tightest version for constrained layouts
+4. **Rationale** — Why these choices work, grounded in user goal and surface type
 
 ## Data files
 
-- `../elementor-copy-reviewer/data/glossary.json` — approved and avoided terms
-- `../elementor-copy-reviewer/data/writing-guidelines.json` — voice, tone, grammar, and pillar rules
+| File | Purpose |
+|---|---|
+| `data/glossary.json` | Approved and banned Elementor product terms with usage notes |
+| `data/writing-guidelines.json` | Voice, tone, grammar, and style rules with examples |
+| `data/surface-areas.json` | Tone expectations and rules per UI surface type |
+| `prompts/write.txt` | Main writing prompt |
+| `prompts/compiled-write.txt` | Flattened single-prompt version for Figma plugin use |
 
-Always load both files before generating copy.
+## Figma plugin notes
 
-## Pillar-aware writing
+Designed to power a Figma plugin in the same pattern as the Copy Reviewer plugin.
+The plugin should:
+- Provide a context input panel (text + optional image/PRD)
+- Auto-detect selected Figma frame and surface type where possible
+- Present the 3-option output with copy-to-clipboard per option
+- Include an inline feedback field for iteration without leaving the plugin
 
-Match tone to the product area when identifiable:
+## Scope
 
-| Pillar | Tone | Key rules |
-|---|---|---|
-| Editor | Invigorating, precise | Agency, granular control, describe results not interactions |
-| Angie | Collaborative, transparent | Approved verb system, safety-first, no over-promising |
-| Manage | Operational, confident | Centralized, workflow optimization, control not chore |
-| Platform / Apps | Bold, future-oriented | Openness, data ownership, ecosystem |
-| General / Onboarding | Instructive, helpful | Clear, neutral, supportive for new users |
-
-## Key rules to apply (always)
-
-- Sentence case for all headings and UI labels
-- No exclamation marks in UI copy
-- Active voice — name the actor and the action
-- Cut adjective fluff ("stunning", "amazing", "powerful")
-- Grade-school English for global audiences — no idioms, no jargon
-- Oxford commas in lists
-- Spell out numbers one through nine; numerals for 10+
-- Keep feature text within two lines in UI
-- Use `site` not `website` in product UI
-- Use `plan` for feature tiers, `subscription` for billing
-- Never use `membership`, `popup` (use `pop-up`), `Wordpress` (use `WordPress`)
+- **Single string** — one label, CTA, tooltip
+- **Component** — all strings in one UI component
+- **Screen** — full copy across one screen or modal
+- **Flow** — end-to-end copy across multiple screens, with cross-screen consistency
