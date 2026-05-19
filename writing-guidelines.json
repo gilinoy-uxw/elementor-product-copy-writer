@@ -1,0 +1,586 @@
+{
+  "schema_version": "1.0",
+  "source": "Elementor Brand Voice & Tone Guidelines",
+  "rules": [
+    {
+      "id": "voice-01",
+      "category": "core_voice",
+      "rule": "Write with courageous clarity: use no-frills language and speak with steady conviction when it matters.",
+      "rationale": "The brand should sound confident and decisive, not hesitant, vague, or inflated.",
+      "example": {
+        "good": "Keep your site running with unified support.",
+        "bad": "We're kind of here to help you navigate whatever comes up."
+      }
+    },
+    {
+      "id": "voice-02",
+      "category": "core_voice",
+      "rule": "Write with visionary practicality: connect big-picture outcomes to tangible user value.",
+      "rationale": "The brand should inspire users by showing what is possible now and why it matters.",
+      "example": {
+        "good": "Build faster today with a workflow that scales with your business.",
+        "bad": "Imagine a whole new future of limitless possibilities."
+      }
+    },
+    {
+      "id": "voice-03",
+      "category": "core_voice",
+      "rule": "Write with intelligent precision: simplify complexity through clarity, not jargon.",
+      "rationale": "Expertise should feel useful and accessible rather than technical for its own sake.",
+      "example": {
+        "good": "Review changes before applying them to your site.",
+        "bad": "Initiate pre-deployment validation of generated outputs."
+      }
+    },
+    {
+      "id": "style-01",
+      "category": "grammar_style",
+      "rule": "Use active voice.",
+      "rationale": "Active voice makes actions clearer, shorter, and easier to scan.",
+      "example": {
+        "good": "Edit your header.",
+        "bad": "The header can be edited."
+      }
+    },
+    {
+      "id": "style-02",
+      "category": "grammar_style",
+      "rule": "Name the actor and the action clearly.",
+      "rationale": "Users should immediately understand who is doing what.",
+      "example": {
+        "good": "Angie created a Flexbox image accordion.",
+        "bad": "A Flexbox image accordion was created."
+      }
+    },
+    {
+      "id": "style-03",
+      "category": "grammar_style",
+      "rule": "Use grade-school-level English suitable for a global audience.",
+      "rationale": "Simple language improves comprehension for international users and reduces ambiguity.",
+      "example": {
+        "good": "Apply changes to your site.",
+        "bad": "Deploy modifications to your production environment."
+      }
+    },
+    {
+      "id": "style-04",
+      "category": "grammar_style",
+      "rule": "Avoid idioms, slang, and culture-specific metaphors.",
+      "rationale": "These can confuse global audiences and weaken clarity.",
+      "example": {
+        "good": "Fix issues before they affect your site.",
+        "bad": "Catch problems before the wheels come off."
+      }
+    },
+    {
+      "id": "style-05",
+      "category": "grammar_style",
+      "rule": "Use sentence case for headings and UI labels.",
+      "rationale": "Sentence case supports a clean, modern, and function-first interface.",
+      "example": {
+        "good": "Site settings",
+        "bad": "Site Settings"
+      }
+    },
+    {
+      "id": "style-06",
+      "category": "grammar_style",
+      "rule": "Do not use exclamation marks in UI copy.",
+      "rationale": "Energy should come from clear verbs and useful content, not punctuation.",
+      "example": {
+        "good": "Your site is ready",
+        "bad": "Your site is ready!"
+      }
+    },
+    {
+      "id": "style-07",
+      "category": "grammar_style",
+      "rule": "Use Oxford commas.",
+      "rationale": "Oxford commas improve readability and reduce ambiguity in lists.",
+      "example": {
+        "good": "Edit pages, templates, and pop-ups.",
+        "bad": "Edit pages, templates and pop-ups."
+      }
+    },
+    {
+      "id": "style-09",
+      "category": "grammar_style",
+      "rule": "Keep feature text within two lines in the UI.",
+      "rationale": "UI copy should be fast to scan and lightweight in layout.",
+      "example": {
+        "good": "Centralize site workflows in one dashboard.",
+        "bad": "Centralize and optimize all of your site-related workflows in one beautifully organized dashboard experience."
+      }
+    },
+    {
+      "id": "style-10",
+      "category": "grammar_style",
+      "rule": "Cut adjective fluff and empty intensifiers.",
+      "rationale": "Words like 'amazing' or 'stunning' add noise without adding meaning.",
+      "example": {
+        "good": "Build responsive layouts with Flexbox precision.",
+        "bad": "Build stunning, amazing, beautifully responsive layouts."
+      }
+    },
+    {
+      "id": "tone-01",
+      "category": "tone",
+      "rule": "Default to an instructive tone for standard tasks: neutral, direct, and functional.",
+      "rationale": "Most product interactions should feel clear and efficient rather than overly emotional.",
+      "example": {
+        "good": "Choose a template to get started.",
+        "bad": "Let's jump in and make something awesome together."
+      }
+    },
+    {
+      "id": "tone-02",
+      "category": "tone",
+      "rule": "Use a helpful tone when guiding users: polite, respectful, and clear.",
+      "rationale": "Guidance should support the user without sounding overly chatty or ceremonial.",
+      "example": {
+        "good": "Add the downloaded zip file to your WordPress environment.",
+        "bad": "No worries, we've got you covered every step of the way."
+      }
+    },
+    {
+      "id": "tone-03",
+      "category": "tone",
+      "rule": "Use a reassuring tone in errors, recovery moments, or trust-sensitive flows.",
+      "rationale": "Users need stability and confidence when something feels risky or uncertain.",
+      "example": {
+        "good": "Your changes are safe in Test mode until you apply them.",
+        "bad": "Something went wrong, but fingers crossed it'll be fine."
+      }
+    },
+    {
+      "id": "tone-04",
+      "category": "tone",
+      "rule": "Use a motivational tone sparingly, mainly for milestones or progress moments.",
+      "rationale": "Positive encouragement is useful in small doses but should not overwhelm product clarity.",
+      "example": {
+        "good": "Your site is ready for the next step.",
+        "bad": "Amazing job! You're crushing it!"
+      }
+    },
+    {
+      "id": "editor-01",
+      "category": "pillar_editor",
+      "rule": "For Editor copy, use an invigorating and precise tone.",
+      "rationale": "The Editor should feel powerful, exact, and creatively empowering.",
+      "example": {
+        "good": "Build with pixel-perfect control.",
+        "bad": "Make your site easily with drag-and-drop fun."
+      }
+    },
+    {
+      "id": "editor-02",
+      "category": "pillar_editor",
+      "rule": "Focus Editor messaging on agency and granular control.",
+      "rationale": "Users should feel ownership, precision, and creative command.",
+      "example": {
+        "good": "Adjust every layout detail with Flexbox precision.",
+        "bad": "Move things around until it looks right."
+      }
+    },
+    {
+      "id": "editor-03",
+      "category": "pillar_editor",
+      "rule": "Describe results, not physical interactions.",
+      "rationale": "Outcome-focused copy is more strategic and user-relevant than describing UI mechanics.",
+      "example": {
+        "good": "Create precise responsive layouts.",
+        "bad": "Drag widgets into columns."
+      }
+    },
+    {
+      "id": "editor-04",
+      "category": "pillar_editor",
+      "rule": "Prefer terms like 'pixel-perfect' and 'Flexbox precision' when relevant.",
+      "rationale": "These terms reinforce the Editor's precision and professional value.",
+      "example": {
+        "good": "Design with pixel-perfect precision.",
+        "bad": "Make things look nice."
+      }
+    },
+    {
+      "id": "editor-05",
+      "category": "pillar_editor",
+      "rule": "Do not use 'easy' or 'drag-and-drop' as standalone benefits.",
+      "rationale": "These phrases are generic and undersell the Editor's depth and control.",
+      "example": {
+        "good": "Create responsive layouts with precise control.",
+        "bad": "Easy drag-and-drop editing."
+      }
+    },
+    {
+      "id": "hosting-01",
+      "category": "pillar_hosting",
+      "rule": "For Hosting copy, use a reliable, authoritative, and reassuring tone.",
+      "rationale": "Hosting decisions are trust-sensitive and should feel stable and credible.",
+      "example": {
+        "good": "Keep your site stable with unified support.",
+        "bad": "Hosting you'll absolutely love."
+      }
+    },
+    {
+      "id": "hosting-02",
+      "category": "pillar_hosting",
+      "rule": "Focus Hosting messaging on eliminating friction and the blame game.",
+      "rationale": "The value is operational clarity and reduced support complexity.",
+      "example": {
+        "good": "Get one team for hosting and site support.",
+        "bad": "Figure out which provider caused the issue."
+      }
+    },
+    {
+      "id": "hosting-03",
+      "category": "pillar_hosting",
+      "rule": "Emphasize uptime, stability, and unified support.",
+      "rationale": "These are the strongest trust and performance signals for Hosting.",
+      "example": {
+        "good": "Built for uptime, stability, and unified support.",
+        "bad": "Packed with exciting hosting features."
+      }
+    },
+    {
+      "id": "hosting-04",
+      "category": "pillar_hosting",
+      "rule": "Do not use fear-based language about crashes or disasters.",
+      "rationale": "Fear-mongering weakens trust and feels manipulative.",
+      "example": {
+        "good": "Reduce downtime with a more stable setup.",
+        "bad": "Avoid catastrophic server crashes before they destroy your business."
+      }
+    },
+    {
+      "id": "manage-01",
+      "category": "pillar_manage",
+      "rule": "For Manage copy, use a reassuring, organized, and efficient tone.",
+      "rationale": "Manage should feel like calm control at scale.",
+      "example": {
+        "good": "Standardize workflows across your sites.",
+        "bad": "Tackle the chaos of management."
+      }
+    },
+    {
+      "id": "manage-02",
+      "category": "pillar_manage",
+      "rule": "Focus Manage messaging on scaling output and reducing production time.",
+      "rationale": "Its value is operational efficiency, not busywork.",
+      "example": {
+        "good": "Centralize updates to save time across sites.",
+        "bad": "Spend less time on boring admin chores."
+      }
+    },
+    {
+      "id": "manage-03",
+      "category": "pillar_manage",
+      "rule": "Prefer terms like 'centralized', 'workflow optimization', and 'standardize'.",
+      "rationale": "These terms reinforce the product's value in coordination and scale.",
+      "example": {
+        "good": "Centralize site workflows and standardize output.",
+        "bad": "Handle your to-do list more easily."
+      }
+    },
+    {
+      "id": "manage-04",
+      "category": "pillar_manage",
+      "rule": "Do not frame management as a chore; frame it as control.",
+      "rationale": "The product should feel empowering and strategic, not burdensome.",
+      "example": {
+        "good": "Take control of site operations in one place.",
+        "bad": "Make management less painful."
+      }
+    },
+    {
+      "id": "platform-01",
+      "category": "pillar_platform_apps",
+      "rule": "For Platform and Apps copy, use an inspiring, bold, and future-oriented tone.",
+      "rationale": "This area should communicate momentum, extensibility, and long-term value.",
+      "example": {
+        "good": "Extend your workflow across an open ecosystem.",
+        "bad": "Use our platform tools for various additional things."
+      }
+    },
+    {
+      "id": "platform-02",
+      "category": "pillar_platform_apps",
+      "rule": "Focus Platform and Apps messaging on equity on the open web and extensibility.",
+      "rationale": "Its value comes from openness, ownership, and ecosystem growth.",
+      "example": {
+        "good": "Build on the open web with full data ownership.",
+        "bad": "Use our closed system to keep everything in one place."
+      }
+    },
+    {
+      "id": "platform-03",
+      "category": "pillar_platform_apps",
+      "rule": "Highlight data ownership, ecosystem, and open-source freedom.",
+      "rationale": "These concepts differentiate the offering and reinforce trust and flexibility.",
+      "example": {
+        "good": "Keep control of your data across an open ecosystem.",
+        "bad": "Enjoy proprietary power in a locked environment."
+      }
+    },
+    {
+      "id": "platform-04",
+      "category": "pillar_platform_apps",
+      "rule": "Do not use 'proprietary' or 'locked-in' terminology.",
+      "rationale": "These terms conflict with the open-web and ecosystem narrative.",
+      "example": {
+        "good": "Built for open-source flexibility.",
+        "bad": "A proprietary platform that keeps everything under one roof."
+      }
+    },
+    {
+      "id": "angie-01",
+      "category": "angie",
+      "rule": "Present Angie as a collaborative partner, not as a tool users operate.",
+      "rationale": "This supports a human-AI collaboration model where the user stays in control.",
+      "example": {
+        "good": "Angie can help you build this section.",
+        "bad": "Use the Angie tool to generate output."
+      }
+    },
+    {
+      "id": "angie-02",
+      "category": "angie",
+      "rule": "Use the approved Angie verb system: build/create, review, apply to site, and fix with Angie.",
+      "rationale": "Consistent verbs create a stable mental model for how Angie works.",
+      "example": {
+        "good": "Review it in Test mode, then apply it to your site.",
+        "bad": "Generate it, deploy it, and regenerate if needed."
+      }
+    },
+    {
+      "id": "angie-03",
+      "category": "angie",
+      "rule": "Structure Angie responses in three parts: result explanation, next-step control, and collaborative close.",
+      "rationale": "This pattern improves transparency, control, and continuity.",
+      "example": {
+        "good": "I've created a Flexbox image accordion. You can review it in Test mode before applying it to your site. Would you like to adjust anything?",
+        "bad": "Done. Want more?"
+      }
+    },
+    {
+      "id": "angie-04",
+      "category": "angie",
+      "rule": "Communicate safety first when Angie makes or suggests changes.",
+      "rationale": "Users need reassurance that AI-assisted changes will not affect the live site unexpectedly.",
+      "example": {
+        "good": "You can review these changes in Test mode before applying them to your site.",
+        "bad": "The changes are ready and live once generated."
+      }
+    },
+    {
+      "id": "angie-05",
+      "category": "angie",
+      "rule": "Acknowledge that Angie is evolving and in Beta when relevant.",
+      "rationale": "This sets accurate expectations and builds trust through transparency.",
+      "example": {
+        "good": "Angie is in Beta and still evolving.",
+        "bad": "Angie always gets it right."
+      }
+    },
+    {
+      "id": "angie-06",
+      "category": "angie",
+      "rule": "Do not use technical AI wording such as 'bot' or 'generating output'.",
+      "rationale": "Technical phrasing feels mechanical and undermines the collaborative experience.",
+      "example": {
+        "good": "Angie created this layout.",
+        "bad": "The bot generated an output."
+      }
+    },
+    {
+      "id": "angie-07",
+      "category": "angie",
+      "rule": "Do not over-promise with words like 'magical' or 'perfect'.",
+      "rationale": "Overclaiming reduces credibility and conflicts with transparent AI communication.",
+      "example": {
+        "good": "Angie can help you create a starting point.",
+        "bad": "Angie creates perfect results instantly."
+      }
+    },
+    {
+      "id": "angie-08",
+      "category": "angie",
+      "rule": "Be transparent about what Angie has done.",
+      "rationale": "Users need to understand the result in order to review and make informed decisions.",
+      "example": {
+        "good": "I've created a Flexbox image accordion.",
+        "bad": "Your request is complete."
+      }
+    },
+    {
+      "id": "angie-09",
+      "category": "angie",
+      "rule": "Preserve user control by making review and adjustment steps explicit.",
+      "rationale": "Human-AI collaboration works best when users feel ownership over the outcome.",
+      "example": {
+        "good": "Review it in Test mode and adjust anything before applying it.",
+        "bad": "This is the final version."
+      }
+    },
+    {
+      "id": "angie-10",
+      "category": "angie",
+      "rule": "Use accessible, non-technical language when describing Angie's behavior.",
+      "rationale": "Clarity and trust are stronger when the system is described in human-readable terms.",
+      "example": {
+        "good": "Angie fixed the layout issue.",
+        "bad": "The model executed an automated remediation flow."
+      }
+    },
+    {
+      "id": "audience-01",
+      "category": "audience",
+      "rule": "For first-timers, focus on belief with supportive and guiding language.",
+      "rationale": "New users need confidence, orientation, and momentum.",
+      "example": {
+        "good": "Start with a template and adjust it as you go.",
+        "bad": "Customize your full production workflow immediately."
+      }
+    },
+    {
+      "id": "audience-02",
+      "category": "audience",
+      "rule": "For keen climbers, focus on momentum with sharp, responsive, ROI-driven language.",
+      "rationale": "This audience responds to speed, leverage, and measurable progress.",
+      "example": {
+        "good": "Move faster with workflows built to scale.",
+        "bad": "Take your time and explore what feels inspiring."
+      }
+    },
+    {
+      "id": "audience-03",
+      "category": "audience",
+      "rule": "For future masters, focus on validation with knowledgeable, direct, no-fluff language.",
+      "rationale": "Advanced users want precision, credibility, and respect for expertise.",
+      "example": {
+        "good": "Standardize output across sites with centralized control.",
+        "bad": "You'll love how awesome and intuitive this feels."
+      }
+    },
+    {
+      "id": "quality-01",
+      "category": "writing_quality",
+      "rule": "CTAs must describe outcomes, not mechanics. Start with a strong verb that tells the user what they will achieve.",
+      "rationale": "Outcome-focused CTAs are more motivating and reduce cognitive load.",
+      "example": {
+        "good": "Publish your site",
+        "bad": "Click to submit"
+      }
+    },
+    {
+      "id": "quality-02",
+      "category": "writing_quality",
+      "rule": "Empty states must feel like invitations, not absences. Tell the user what they can do, not what is missing.",
+      "rationale": "Empty states are opportunities for first action, not just acknowledgment of emptiness.",
+      "example": {
+        "good": "Create your first site to get started.",
+        "bad": "No sites yet."
+      }
+    },
+    {
+      "id": "quality-03",
+      "category": "writing_quality",
+      "rule": "Error messages must always include a next step. Never leave users without a path forward.",
+      "rationale": "Errors without direction increase frustration and abandonment.",
+      "example": {
+        "good": "Something went wrong. Try refreshing the page or contact support.",
+        "bad": "An error occurred."
+      }
+    },
+    {
+      "id": "quality-04",
+      "category": "writing_quality",
+      "rule": "Replace weak or vague words with specific, concrete alternatives.",
+      "rationale": "Specificity builds trust and reduces ambiguity.",
+      "example": {
+        "good": "Your pages, templates, and pop-ups are saved.",
+        "bad": "Your content is saved."
+      }
+    },
+    {
+      "id": "quality-05",
+      "category": "writing_quality",
+      "rule": "Remove filler phrases that add length without meaning.",
+      "rationale": "Concise copy respects the user's time and improves scannability.",
+      "example": {
+        "good": "To publish your site, connect a domain.",
+        "bad": "In order to be able to publish your site, you will need to connect a domain."
+      }
+    },
+    {
+      "id": "quality-06",
+      "category": "writing_quality",
+      "rule": "Replace weak verb constructions with strong, direct verbs.",
+      "rationale": "Strong verbs make copy more direct and confident.",
+      "example": {
+        "good": "You can publish any time.",
+        "bad": "You are able to publish at any time."
+      }
+    },
+    {
+      "id": "quality-07",
+      "category": "writing_quality",
+      "rule": "Navigation labels must be parallel in structure — same grammatical form across all items.",
+      "rationale": "Parallel structure reduces cognitive load and feels more professional.",
+      "example": {
+        "good": "Sites / Templates / Settings",
+        "bad": "Your Sites / Managing Templates / Account Settings"
+      }
+    },
+    {
+      "id": "quality-08",
+      "category": "writing_quality",
+      "rule": "Use second person ('you', 'your') consistently in UI copy. Never switch to third person or passive.",
+      "rationale": "Second person keeps copy direct and personal.",
+      "example": {
+        "good": "Your site is live.",
+        "bad": "The site is now live."
+      }
+    },
+    {
+      "id": "quality-09",
+      "category": "writing_quality",
+      "rule": "Success states should confirm what happened and suggest what to do next.",
+      "rationale": "Confirmation alone leaves users wondering what comes next.",
+      "example": {
+        "good": "Site published. Share your URL or keep editing.",
+        "bad": "Done."
+      }
+    },
+    {
+      "id": "quality-10",
+      "category": "writing_quality",
+      "rule": "Descriptions and tooltips should answer 'what does this do for me?' not just 'what is this?'",
+      "rationale": "User-benefit framing is more motivating than feature description.",
+      "example": {
+        "good": "Save time by reusing this layout across multiple sites.",
+        "bad": "A layout that can be used on multiple sites."
+      }
+    },
+    {
+      "id": "quality-11",
+      "category": "writing_quality",
+      "rule": "Onboarding copy should build momentum one step at a time — never front-load all options.",
+      "rationale": "Progressive disclosure reduces overwhelm and increases completion rates.",
+      "example": {
+        "good": "Start by giving your site a name.",
+        "bad": "Choose your site name, template, domain, and plan to get started."
+      }
+    },
+    {
+      "id": "quality-12",
+      "category": "writing_quality",
+      "rule": "When something is technically correct but flat, look for a more human or specific way to say it.",
+      "rationale": "Copy that sounds like it was written by a person builds more trust than copy that sounds like a system.",
+      "example": {
+        "good": "Looks like something went wrong on our end. Give it another try.",
+        "bad": "Operation failed. Please retry."
+      }
+    }
+  ]
+}

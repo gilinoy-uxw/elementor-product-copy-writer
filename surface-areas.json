@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "source": "Elementor UX Writing Surface Area Guidelines",
+  "surface_areas": [
+    {
+      "id": "error-messages",
+      "name": "Error messages",
+      "tone": "Direct, calm, empathic",
+      "rules": [
+        "Always include a next step — never leave the user stuck",
+        "Never blame the user (avoid 'you failed to', 'invalid input')",
+        "Be specific about what went wrong when possible",
+        "Keep it short — one sentence for the problem, one for the fix",
+        "Avoid exclamation marks, dramatic language, or technical jargon",
+        "Avoid generic messages like 'Something went wrong' without a next step"
+      ],
+      "examples": {
+        "correct": "We couldn't save your changes. Check your connection and try again.",
+        "avoid": "Error! Your request failed."
+      }
+    },
+    {
+      "id": "empty-states",
+      "name": "Empty states",
+      "tone": "Inviting, action-oriented",
+      "rules": [
+        "Frame as an invitation to act, not an absence of content",
+        "Tell the user exactly what they can do to fill the space",
+        "Use second person: 'Create your first site' not 'No sites found'",
+        "Can include a brief benefit statement to motivate action",
+        "Avoid negative framing ('nothing here', 'no results', 'empty')"
+      ],
+      "examples": {
+        "correct": "Create your first site to get started.",
+        "avoid": "No sites yet."
+      }
+    },
+    {
+      "id": "onboarding",
+      "name": "Onboarding",
+      "tone": "Warm, encouraging, momentum-building",
+      "rules": [
+        "More character and warmth than standard UI copy — this is a relationship-building moment",
+        "One step at a time — never front-load all options or requirements",
+        "Focus on what the user will be able to do, not on the process",
+        "Avoid overwhelming with choices — guide, don't present a menu",
+        "Progress should feel earned — acknowledge milestones appropriately",
+        "Avoid over-excited or hollow cheerleading ('Amazing!', 'You're crushing it!')"
+      ],
+      "examples": {
+        "correct": "Start by giving your site a name.",
+        "avoid": "Choose your site name, template, domain, and plan to get started."
+      }
+    },
+    {
+      "id": "success-states",
+      "name": "Success states",
+      "tone": "Clear, positive, forward-looking",
+      "rules": [
+        "Confirm what happened specifically, not generically",
+        "Suggest or indicate what comes next",
+        "Keep it brief — this is a moment to move forward, not dwell",
+        "Avoid hollow confirmations ('Done.', 'OK.', 'Success!')",
+        "No exclamation marks"
+      ],
+      "examples": {
+        "correct": "Site published. Share your URL or keep editing.",
+        "avoid": "Done!"
+      }
+    },
+    {
+      "id": "tooltips-helpers",
+      "name": "Tooltips and helper text",
+      "tone": "Helpful, concise, benefit-oriented",
+      "rules": [
+        "Answer 'what does this do for me?' not just 'what is this?'",
+        "Keep to 1-2 sentences maximum",
+        "Lead with the user benefit, not the feature description",
+        "Use sentence case",
+        "Avoid restating the label — add new information"
+      ],
+      "examples": {
+        "correct": "Save time by reusing this layout across multiple sites.",
+        "avoid": "A layout that can be used on multiple sites."
+      }
+    },
+    {
+      "id": "navigation-labels",
+      "name": "Navigation and labels",
+      "tone": "Neutral, precise, scannable",
+      "rules": [
+        "Use parallel grammatical structure across all items in a nav set",
+        "Sentence case only",
+        "Be as short as possible — one or two words where possible",
+        "Nouns or noun phrases, not verbs (unless it's a CTA)",
+        "Avoid articles ('the', 'a') in navigation labels"
+      ],
+      "examples": {
+        "correct": "Sites / Templates / Settings",
+        "avoid": "Your Sites / Managing Templates / Account Settings"
+      }
+    },
+    {
+      "id": "ctas",
+      "name": "CTAs and buttons",
+      "tone": "Action-oriented, outcome-focused",
+      "rules": [
+        "Start with a strong verb",
+        "Describe the outcome, not the mechanic ('Publish your site' not 'Click to submit')",
+        "Keep to 2-4 words where possible",
+        "Avoid weak verbs: Submit, Click, Go, OK, Done",
+        "Preferred verbs: Create, Build, Publish, Save, Add, Connect, Start, Get",
+        "Sentence case",
+        "Never use 'Click here' or 'Learn more' as standalone CTAs without context"
+      ],
+      "examples": {
+        "correct": "Publish your site",
+        "avoid": "Click to submit"
+      }
+    },
+    {
+      "id": "destructive-actions",
+      "name": "Destructive actions",
+      "tone": "Direct, explicit, never casual",
+      "rules": [
+        "Be completely explicit about what will be deleted or lost",
+        "Never use casual or softened language for irreversible actions",
+        "Always confirm what cannot be undone",
+        "The destructive CTA should name the action specifically ('Delete site' not 'Confirm')",
+        "Include a clear escape option"
+      ],
+      "examples": {
+        "correct": "Delete this site? This action cannot be undone.",
+        "avoid": "Are you sure? This might cause issues."
+      }
+    },
+    {
+      "id": "angie-responses",
+      "name": "Angie (AI) responses",
+      "tone": "Collaborative, transparent, control-preserving",
+      "rules": [
+        "Present Angie as a collaborative partner, not a tool",
+        "Always explain what was done before suggesting next steps",
+        "Make review and adjustment steps explicit — preserve user control",
+        "Communicate that changes are in Test mode before they go live",
+        "Use approved verb system: build/create, review, apply to site, fix with Angie",
+        "Never over-promise: avoid 'perfect', 'magical', 'always'",
+        "Do not use technical AI terms: 'bot', 'generating output', 'model'",
+        "Structure: result explanation → next-step control → collaborative close"
+      ],
+      "examples": {
+        "correct": "I've created a Flexbox image accordion. You can review it in Test mode before applying it to your site. Would you like to adjust anything?",
+        "avoid": "Done. Want more?"
+      }
+    },
+    {
+      "id": "upgrade-pricing",
+      "name": "Upgrade and pricing copy",
+      "tone": "Clear, benefit-led, never pushy",
+      "rules": [
+        "Lead with what the user gains, not what they're missing",
+        "Use 'plan' for feature tiers, 'subscription' for billing",
+        "Never use 'membership'",
+        "Avoid fear-based or urgency-manipulation language",
+        "Be specific about what's included",
+        "Respect the user's current state — don't frame free as inadequate"
+      ],
+      "examples": {
+        "correct": "Upgrade to Editor Pro to access custom CSS and dynamic content.",
+        "avoid": "You're missing out on Pro features. Upgrade now!"
+      }
+    },
+    {
+      "id": "settings-preferences",
+      "name": "Settings and preferences",
+      "tone": "Neutral, precise, instructive",
+      "rules": [
+        "Labels should describe the setting, not the outcome of changing it",
+        "Use sentence case throughout",
+        "Avoid vague labels — be specific about what the setting controls",
+        "Helper text should clarify edge cases or consequences, not restate the label",
+        "Avoid 'enable', 'disable' — prefer the specific action or state"
+      ],
+      "examples": {
+        "correct": "Show site to search engines",
+        "avoid": "Enable SEO visibility settings"
+      }
+    }
+  ]
+}
