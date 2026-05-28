@@ -397,29 +397,7 @@
       ]
     }
   },
-  {
-    "term": "Manage",
-    "approved": [
-      "Manage"
-    ],
-    "avoid": [
-      "Elementor Manage"
-    ],
-    "definition": "A centralized dashboard for monitoring, maintaining, and optimizing WordPress sites.",
-    "usage": {
-      "when_to_use": "Referring to the standalone product or capability family.",
-      "examples": {
-        "correct": "Connect your sites to Manage. Open Manage. Manage dashboard.",
-        "avoid": "Elementor Manage"
-      },
-      "notes": [
-        "Product name — always capitalized",
-        "Used in marketing, documentation, and cross-product references",
-        "Avoid overusing inside One UI surfaces",
-        "Use 'Site management' (sentence case) inside Elementor One or WordPress admin surfaces"
-      ]
-    }
-  },
+
   {
     "term": "Site management",
     "approved": [
@@ -755,6 +733,117 @@
         "Element-specific settings appear in the General tab",
         "Responsive styling can be adjusted directly from the Style tab",
         "Short definition: 'The centralized styling workspace for Atomic Elements'"
+      ]
+    }
+  },
+  {
+    "term": "Image Optimization",
+    "approved": [
+      "Image Optimization"
+    ],
+    "formerly": "Image Optimizer",
+    "avoid": [
+      "Image Optimizer",
+      "Optimize Images",
+      "Image optimization (when referring to the named capability)"
+    ],
+    "definition": "The capability for optimizing site images through compression, WebP/AVIF conversion, and delivery improvements.",
+    "usage": {
+      "when_to_use": "Use Image Optimization when referring to the capability in One, product UI, navigation, documentation, onboarding, and support content.",
+      "examples": {
+        "correct": "Open Image Optimization. Image Optimization is included in One. Use Image Optimization to make image files lighter and improve site performance."
+      },
+      "notes": [
+        "Always capitalize both words when referring to the capability name"
+      ]
+    }
+  },
+  {
+    "term": "Email Deliverability",
+    "approved": [
+      "Email Deliverability"
+    ],
+    "formerly": "Site Mailer",
+    "avoid": [
+      "Site Mailer",
+      "Mailer",
+      "Email delivery (when referring to the named capability)"
+    ],
+    "definition": "The capability for improving site email sending reliability, including SMTP-free sending, delivery logs, and tracking.",
+    "usage": {
+      "when_to_use": "Use Email Deliverability when referring to the capability in One, product UI, documentation, onboarding, and support content.",
+      "examples": {
+        "correct": "Set up Email Deliverability. Email Deliverability helps keep site emails reliable. View delivery logs in Email Deliverability."
+      },
+      "notes": [
+        "Use the full capability name — avoid shortening to 'Email' or 'Mailer' unless context is highly constrained and already clear"
+      ]
+    }
+  },
+  {
+    "term": "Web Accessibility",
+    "approved": [
+      "Web Accessibility"
+    ],
+    "formerly": "Ally",
+    "avoid": [
+      "Ally",
+      "Accessibility plugin",
+      "Web accessibility (when referring to the named capability)"
+    ],
+    "definition": "The capability for scanning sites for accessibility issues, guiding fixes, and supporting a more accessible user experience.",
+    "usage": {
+      "when_to_use": "Use Web Accessibility when referring to the capability in One, product UI, documentation, onboarding, and support content.",
+      "examples": {
+        "correct": "Start with Web Accessibility. Web Accessibility helps you scan your site and review guided fixes. Open Web Accessibility to check your site's accessibility status."
+      },
+      "notes": [
+        "Use the full capability name — 'Accessibility' alone may be used as a navigation label only when surrounding context makes the capability clear"
+      ]
+    }
+  },
+  {
+    "term": "Cookie Consent",
+    "approved": [
+      "Cookie Consent"
+    ],
+    "formerly": "Cookiez",
+    "avoid": [
+      "Cookiez",
+      "Cookie consent (when referring to the named capability)",
+      "Cookies (when referring to the full capability)"
+    ],
+    "definition": "The capability for managing cookie consent and privacy compliance flows, including GDPR and CCPA-related consent needs.",
+    "usage": {
+      "when_to_use": "Use Cookie Consent when referring to the capability in One, product UI, documentation, onboarding, and support content.",
+      "examples": {
+        "correct": "Set up Cookie Consent. Cookie Consent helps you manage privacy consent from one place. Open Cookie Consent to update your banner settings."
+      },
+      "notes": [
+        "Always capitalize both words when referring to the capability name"
+      ]
+    }
+  },
+  {
+    "term": "Site Management",
+    "approved": [
+      "Site Management"
+    ],
+    "formerly": "Manage",
+    "avoid": [
+      "Elementor Manage",
+      "Manage (when referring to the One capability)",
+      "Mange"
+    ],
+    "definition": "The capability for monitoring, maintaining, and managing WordPress sites from one centralized experience.",
+    "usage": {
+      "when_to_use": "Use Site Management when referring to the capability within One, including dashboards, navigation, setup flows, alerts, and operational UI.",
+      "examples": {
+        "correct": "Open Site Management. Site Management is included in some plans. Use Site Management to monitor and maintain your sites."
+      },
+      "notes": [
+        "Use Manage only when referring to the standalone product or broader product family",
+        "In One surfaces, always use Site Management"
       ]
     }
   },
