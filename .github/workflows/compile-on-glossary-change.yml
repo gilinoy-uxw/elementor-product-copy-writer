@@ -5,6 +5,10 @@ on:
     paths:
       - 'data/glossary.json'
 
+concurrency:
+  group: compile-glossary
+  cancel-in-progress: true
+
 jobs:
   compile:
     runs-on: ubuntu-latest
