@@ -65,6 +65,17 @@ For each surface or element:
 | `prompts/write.txt` | Main writing prompt |
 | `prompts/compiled-write.txt` | Flattened single-prompt version for Figma plugin use |
 
+## Maintenance
+
+`compiled-write.txt` is a flattened version of `prompts/write.txt` combined with all three data files. It must be rebuilt manually whenever any of the following are updated:
+
+- `prompts/write.txt`
+- `data/glossary.json`
+- `data/writing-guidelines.json`
+- `data/surface-areas.json`
+
+**If you update any of the above and do not rebuild `compiled-write.txt`, the Figma plugin will be out of sync with the rest of the skill.** Always rebuild and commit both files together.
+
 ## Figma plugin notes
 
 Designed to power a Figma plugin in the same pattern as the Copy Reviewer plugin.
