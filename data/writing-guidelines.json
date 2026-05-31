@@ -581,6 +581,93 @@
         "good": "Looks like something went wrong on our end. Give it another try.",
         "bad": "Operation failed. Please retry."
       }
+    },
+    {
+      "id": "naming-01",
+      "category": "app_naming",
+      "rule": "Use the current proper names for all Elementor capabilities. Retire all legacy plugin names immediately.",
+      "rationale": "Elementor has unified its capability naming. Legacy names are no longer valid in any content type.",
+      "name_map": {
+        "Image Optimizer": "Image Optimization",
+        "Site Mailer": "Email Deliverability",
+        "Ally": "Web Accessibility",
+        "Manage": "Site Management",
+        "Cookiez": "Cookie Consent"
+      },
+      "example": {
+        "good": "Activate Web Accessibility on your site.",
+        "bad": "Install the Ally plugin on your site."
+      }
+    },
+    {
+      "id": "naming-02",
+      "category": "app_naming",
+      "rule": "Capitalize a capability name when using it as a proper noun (naming it). Use lowercase when describing what it does.",
+      "rationale": "Capitalization is determined by function — naming vs. describing — not by importance or visual prominence.",
+      "example": {
+        "good": "Enable Email Deliverability to keep your emails out of spam. Once enabled, your email deliverability improves automatically.",
+        "bad": "Enable email deliverability to keep your emails out of spam. Once enabled, your Email Deliverability improves automatically."
+      }
+    },
+    {
+      "id": "naming-03",
+      "category": "app_naming",
+      "rule": "Apply the L1/L2/L3 framework for capability names in body copy and UI. L1: capitalize on first mention. L2: switch to lowercase on subsequent mentions. L3: always capitalize in titles, navigation, and UI labels.",
+      "rationale": "This framework ensures consistency across the user journey without over-capitalizing within flowing prose.",
+      "example": {
+        "good": "We are introducing Image Optimization (L1) to the dashboard. With one click, your images are optimized (L2) automatically. [UI button]: Enable Image Optimization (L3).",
+        "bad": "We are introducing image optimization to the dashboard. With one click, your images are Optimized automatically. [UI button]: Enable image optimization."
+      }
+    },
+    {
+      "id": "naming-04",
+      "category": "app_naming",
+      "rule": "Do not invent capitalized nicknames or shorthand for capability names.",
+      "rationale": "Shortened invented names create brand inconsistency and may confuse users.",
+      "example": {
+        "good": "Image Optimization compresses your files automatically.",
+        "bad": "The Optimizer compresses your files automatically."
+      }
+    },
+    {
+      "id": "naming-05",
+      "category": "app_naming",
+      "rule": "Never combine a capability name with a pricing tier name.",
+      "rationale": "Capability names are tier-agnostic. Baking plan names into capability names creates confusion and limits reuse.",
+      "example": {
+        "good": "Try Image Optimization for free today.",
+        "bad": "Try Image Optimizer Free today."
+      }
+    },
+    {
+      "id": "naming-06",
+      "category": "app_naming",
+      "rule": "Refer to capabilities as 'capabilities', 'features', or 'tools' in marketing and educational content — never 'plugins'.",
+      "rationale": "While these may technically function as plugins in WordPress, calling them plugins in marketing copy undermines the unified Elementor platform narrative.",
+      "example": {
+        "good": "Activate Web Accessibility on your site.",
+        "bad": "Install the Web Accessibility plugin on your site."
+      }
+    },
+    {
+      "id": "naming-07",
+      "category": "app_naming",
+      "rule": "Never call the Email Deliverability capability 'Email Delivery'. Email delivery is the outcome it produces, not the name of the capability.",
+      "rationale": "The name 'Email Deliverability' was chosen deliberately. 'Email Delivery' describes the action, not the tool, and must not be used as an alternate name.",
+      "example": {
+        "good": "Email Deliverability helps messages reach the inbox.",
+        "bad": "Email Delivery helps messages reach the inbox."
+      }
+    },
+    {
+      "id": "naming-08",
+      "category": "app_naming",
+      "rule": "In titles, capitalize a capability name only when it functions as a proper noun (i.e., when you could place the word 'plugin' after it). Use sentence case when describing what it does.",
+      "rationale": "Title capitalization follows the same name-it vs. describe-it rule as body copy. Titles are in sentence case overall.",
+      "example": {
+        "good": "Image Optimization for faster WordPress websites (descriptive title, lowercase) vs. Image Optimization built for better site speed (proper noun, capitalized).",
+        "bad": "image optimization Built For Faster WordPress Websites."
+      }
     }
   ]
 }
