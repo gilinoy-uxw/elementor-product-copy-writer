@@ -149,6 +149,8 @@ Option 2 feels right but the CTA is too long. Can you tighten all three?
 - **Edit `prompts/write.txt`** to change the writing logic or output format.
 - **Rebuild `prompts/compiled-write.txt`** after updating any of the above, to keep the Figma plugin in sync.
 
+> ⚠️ **Maintenance rule:** `compiled-write.txt` is a flattened snapshot of `write.txt` and all three data files. It does **not** update automatically. Any change to `write.txt`, `glossary.json`, `writing-guidelines.json`, or `surface-areas.json` must be followed by a manual rebuild of `compiled-write.txt`. Always commit both files together. If they drift out of sync, the Figma plugin will be running on stale guidelines.
+
 ---
 
 ## 🔗 Related
