@@ -207,8 +207,7 @@
         "avoid": "Upgrade to one for everything Elementor offers."
       },
       "notes": [
-        "Both 'One' and 'Elementor One' are approved — use 'One' in product UI and short-form contexts, 'Elementor One' in full product names and external communications",
-        "Always capitalized — never 'one' or 'ONE'",
+        "Always capitalized as One",
         "Treated as a proper product name, not a number",
         "Avoid adding unnecessary suffixes unless defined elsewhere (e.g. 'One plan')"
       ]
@@ -468,19 +467,47 @@
     }
   },
   {
-    "term": "Test mode",
+    "term": "Test Mode",
     "approved": [
-      "Test mode"
+      "Test Mode"
     ],
     "avoid": [
       "Preview",
-      "draft mode"
+      "Draft mode"
     ],
     "definition": "A safe environment where Angie's changes don't affect the live site.",
     "usage": {
       "examples": {
-        "correct": "Enter Test mode"
+        "correct": "Enter Test Mode"
       }
+    }
+  },
+  {
+    "term": "Super Admin Mode",
+    "approved": [
+      "Super Admin Mode"
+    ],
+    "avoid": [
+      "God Mode",
+      "Admin Mode",
+      "Advanced Mode",
+      "Full Access Mode",
+      "Agent Mode (when referring to read-write site access)"
+    ],
+    "definition": "An opt-in Angie mode that gives Angie read-write access to the site's WordPress stack, including the file system, database, and PHP layer, so it can inspect, modify, and execute changes on the user's behalf.",
+    "usage": {
+      "when_to_use": "When referring to Angie's highest-permission mode for advanced site operations, debugging, bulk changes, and technical fixes that require access beyond the standard chat experience.",
+      "examples": {
+        "correct": "Enter Super Admin Mode. Super Admin Mode gives Angie access to your site's files, database, and PHP layer. Use Super Admin Mode to debug site errors or apply bulk changes across your site."
+      },
+      "notes": [
+        "Always capitalize all three words: Super Admin Mode",
+        "Opt-in — frame as a permissioned capability, not the default Angie experience",
+        "Use clear permission language when introducing it, especially around read-write access",
+        "Avoid 'God Mode' in user-facing copy",
+        "Don't use as a generic synonym for Angie, Agent Mode, or Plan Mode",
+        "When possible, explain value through concrete outcomes: bulk updates, debugging, SEO fixes, database changes, or PHP-level fixes"
+      ]
     }
   },
   {
