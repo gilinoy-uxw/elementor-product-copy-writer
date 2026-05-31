@@ -79,6 +79,10 @@ elementor-ux-writer/
 
 ## 🚀 Getting Started
 
+# Install the git hook (one time, after cloning)
+cp hooks/pre-commit .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+
 ### 💻 In Claude Desktop
 
 1. Zip the folder
